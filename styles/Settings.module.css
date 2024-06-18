@@ -1,0 +1,166 @@
+
+.container {
+    width: 100%;
+    display: flex;
+    font-family:var(--font-family);
+}
+
+.list {
+    width: 90%;
+}
+.grey{
+    color:red;
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.popUpView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(120%);
+    transition: transform 0.4s ease;
+}
+
+.show {
+    transform: translateX(-5%);
+}
+
+.title {
+    font-family: var(--font-family);
+    color: var(--main-color);
+    text-align: left;
+    width: 100px;
+    vertical-align: middle;
+}
+
+.popUpViewInput {
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.popUpViewButtonsContainer {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.popUpViewButton {
+    width: 40%;
+    margin-bottom: 10px;
+    font-size: 17px;
+    padding: 10px;
+    background-color: rgb(68, 63, 222);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.popUpViewFileInput {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.popUpListAddButton {
+    width: 70px;
+    background-color: rgb(136, 136, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.popUpViewPreviewImage {
+    width: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popUpViewPreviewImage button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(128, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+
+.popUpViewPreviewImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.table {
+    width: 90%;
+    table-layout: fixed;
+}
+
+.table th {
+    padding: 10px;
+    border-bottom: 1px solid rgb(33, 32, 52, 0.1);
+    text-align: center;
+    text-align: left;
+}
+
+.table td {
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(33, 32, 52, 0.1);
+    text-align: left;
+}
+
+.table tr:hover {
+    cursor:pointer;
+}
+
+
+.popUpListAction {
+    display: flex;
+    height: 20px;
+}
+
+.popUpListAction :hover {
+    cursor: pointer;
+    color: rgb(148, 145, 232);
+}
+
+.order {
+    width: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.order:hover,
+.actions:hover {
+    cursor: pointer;
+    color: var(--light-blue); 
+}
+
+.popUpListSelected {
+    color: var(--light-blue);
+}
+
+.viewPopUpImage {
+    width: 20px;
+    cursor: pointer;
+}

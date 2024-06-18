@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+.sidebar {
+    background-color: #e4e6e7;
+    position: fixed;
+    left: -4px;
+    top: -10px;
+    bottom: -10;
+    border-bottom: grey;
+    height: 102vh;
+    color: var(--secondary-color);
+    transition: transform .3s ease;
+    z-index: 200;
+    width: 250px;
+    font-family: var(--font-family);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.hamburgerIcon {
+    margin-left: 90px;
+    cursor: pointer;
+    width: 20px;
+    color: #82829F;
+}
+
+.hidden {
+    margin-right: 40px;
+    transform: translateX(-82%);
+}
+
+.logo {
+    width: 100px;
+    margin-top: 0;
+}
+
+.sidebarItemWrapper {
+    margin-top: 50px;
+}
+
+.sidebarItem {
+    padding: 10px ;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    color: #4A4A68;
+    text-decoration: none;
+    align-items: center;
+    font-size: 14px;
+}
+
+.sidebarItem span {
+    margin-left: 20px;
+}
+
+.sidebarItemIcon {
+    font-size: 14px;
+    width: 15px;
+}
+
+.sidebarItem:hover {
+    background-color: var(--background-color);
+    border-radius: 100px;
+}
+
+.sidebarItemTop {
+    padding: 20px 30px;
+    margin-bottom: 55px;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.logoutIcon{
+    width:30px;
+}
+
+.logoutIcon:hover{
+    color: var(--main-color);
+}
+
+.userContainer {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    margin:20px;
+    bottom:0;
+}
+  
+  .textColumn {
+    flex: 1;
+  }
+  
+  .iconColumn {
+    padding:10px;
+    border-radius:50%;
+    margin-left:10px;
+  }
+
+
+  .userContainer h2 {
+    font-size: 14px;
+    margin:0;
+  }
+
+  .userContainer h4 {
+    font-size: 14px;
+    margin:0;
+  }

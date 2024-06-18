@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+.loadingContainer {
+    font-family:var(--font-family);
+    display: flex;
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(199deg, blue, #c3c0c0);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 29s ease infinite;
+    -moz-animation: Gradient 29s ease infinite;
+    animation: Gradient 19s ease infinite;
+    color:var(--main-color);
+  }
+  
+  .loadingText {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .backButton {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .backButton:hover {
+    background-color: var(--hover-color);
+  }
+  
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 69%;
+    }
+    50% {
+      background-position: 100% 32%;
+    }
+    100% {
+      background-position: 0% 69%;
+    }
+  }
+  
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 69%;
+    }
+    50% {
+      background-position: 100% 32%;
+    }
+    100% {
+      background-position: 0% 69%;
+    }
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 69%;
+    }
+    50% {
+      background-position: 100% 32%;
+    }
+    100% {
+      background-position: 0% 69%;
+    }
+  }
+  

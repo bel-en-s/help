@@ -1,0 +1,57 @@
+.columns{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding:10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.field{
+    display: flex;
+}
+
+.containerLabel{
+    width: 200px;
+    display: flex;
+}
+
+.container input{
+    margin-bottom: 20px;
+    width: 170px;
+    padding: 4px 5px;
+}
+
+.container span{
+    margin-bottom: 20px;
+}
+
+.button{
+    display: inline-block;
+}
+
+.header{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.header span{
+    font-size: 20px;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0d20ce;
+    color: #fff;
+    cursor: pointer;
+}

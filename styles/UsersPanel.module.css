@@ -1,0 +1,18 @@
+.table input{
+    padding: 5px 10px;
+    width: 90%;
+}
+
+.table td{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.createButton{
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+}

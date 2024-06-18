@@ -1,0 +1,303 @@
+.container {
+    font-family: var(--font-family);
+}
+
+.title {
+    font-family: var(--font-family);
+    color: var(--main-color);
+    text-align: left;
+    width: 100px;
+    vertical-align: middle;
+}
+
+.title tr{
+    background-color: #f0f0f0;
+    color: var(--text-dark);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.headerContent {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.title th div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+
+.th:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+.th:last-child {
+    border-radius: 0 15px 0 0;
+}
+
+.table {
+    width: 90%;
+    table-layout: fixed;
+}
+
+.table th {
+    padding: 10px;
+    border-bottom: 1px solid rgb(33, 32, 52, 0.1);
+    text-align: center;
+    text-align: left;
+}
+
+.popUpTable th {
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(68, 63, 222);
+    color: white;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(33, 32, 52, 0.1);
+    text-align: center;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+/* .table td,
+.table th {
+    font-family: var(--font-family);
+    padding: 5px 15px;
+
+    padding-top: 10px;
+} */
+
+.list tr{
+    font-family: var(--font-family);
+    padding: 5px 15px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 8px; 
+    margin-bottom: 8px;
+}
+
+.list th {
+    border-bottom: 1px solid blue;
+}
+
+.actions {
+    width: 20px;
+    height: 20px;
+    margin-left:1px;
+    background-color: rgba(225, 250, 255, 0.3);
+    padding:15px;
+    border-radius:20px;
+}
+.mainActions {
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.order div{
+    width:10px;
+    display:inline-block;
+}
+
+.show-dropdown .dropdown-content {
+    display: block;
+}
+
+.edit {
+    width: 20px;
+    height: 20px;
+}
+
+.order {
+    width: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.order:hover,
+.actions:hover {
+    cursor: pointer;
+    color: var(--light-blue); 
+}
+
+.newScene td {
+    padding: 25px 15px;
+    text-align: center;
+}
+
+
+.newScene {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-top:30px;
+}
+
+.newScene input,
+.newScene select {
+    width: 200px;
+    margin: 5px 8px;
+    padding: 8px;
+    border: solid 0.5px var(--secondary-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.newScene button {
+    width: calc(100% - 16px);
+    margin: 10px 8px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input {
+    border-radius: 20px;
+    border: solid 0.5px var(--main-color);
+    padding: 5px;
+    width: 100%;
+    margin: 5px 8px;
+    padding: 8px;
+    border: solid 0.5px var(--secondary-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: var(--Accent, #ECF1F4);
+}
+
+.cancel {
+    cursor: pointer;
+    color: var(--color-main); 
+    margin-left: 10px; 
+    font-style: italic;
+    font-size: smaller;
+    padding:20px;
+    margin-left:1%;
+}
+
+.ellipsis{
+    width:20px;
+}
+
+.cancel:hover {
+    color: var(--light-blue); 
+}
+
+.popup {
+    font-family: var(--font-family);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.popup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup input,
+.popup select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.popup button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel {
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.popup input,
+.popup select {
+    margin-top:20px;
+    width: 30vw;
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: var(--Accent, #ECF1F4);
+    box-shadow: 0px 2px 2px -1px rgba(74, 74, 104, 0.10) inset;
+    margin-right: 10px;
+}
+
+.popup button {
+    font-family: var(--font-family);
+    background-color: var(--main-color); 
+    color: white;
+    margin:20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color:  var(--secondary-color); 
+}
+
+.bold {
+    font-weight: 1200;
+}
+
+.menu {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100px; 
+}
+
+.menu div {
+    cursor: pointer; 
+    margin-right: 10px; 
+}

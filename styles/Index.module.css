@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.cardsContainer {
+    display: grid;
+    width: 90%;
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
+    grid-gap: 30px;
+    margin-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.searchbarContainer {
+    text-align: end;
+}

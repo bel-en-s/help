@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+.projectSelector {
+  width: 200px;
+  height: 41px;
+  padding: 8px 16px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  position: relative;
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+
+.projectSelectorHeader.closed {
+  border-radius: 5px;
+}
+
+.projectSelectorHeader {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  transition: background-color 0.3s ease;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectName {
+  display: flex;
+  align-items: center;
+}
+
+.projectNameText {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.projectSelectorList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  cursor: pointer;
+  transition: max-height 0.3s ease;
+}
+
+.projectSelectorList div {
+  margin-bottom: 5px;
+}
+
+.projectSelectorList span {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px 5px 0 0;
+}
+
+.projectSelectorList .closed {
+  opacity:0;
+}
+
+.projectList {
+  padding:0;
+  max-height: 0;
+  top:-10px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease; 
+}
+
+.projectList.open {
+  margin-top: 0;
+  max-height: 500px;
+  transform: translateY(0);
+}
+
+.projectList ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding:0px;
+}
+
+.projectList li {
+  cursor: pointer;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(10px);
+}
+
+.projectList li:hover {
+  color: white;
+}
+
+.project {
+  background-color: var(--background-color);
+  border-radius: 0 0 5px 5px;
+  padding: 8px 16px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1px;
+  transition: max-height 0.3s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.project.closed {
+  opacity: 0;
+}
+
+.project a {
+  background-color: var(--secondary-color);
+  list-style: none;
+  text-decoration: none;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  padding: 8px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  display: inline-block; 
+  background-color: var(--background-color);
+  border-radius: 50%;
+}
+
+.arrow.open {
+  transform: rotate(90deg);
+}
+
+.projectNameText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projectType {
+  margin-top: 0px;
+  font-size:12px;
+}
