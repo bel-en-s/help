@@ -80,7 +80,7 @@ export default function Settings(projectID, sidebarVisible) {
                 data={popUps.map((popUp) => [popUp.id, popUp.title, popUp.description,popUp.footer, popUp.files])}
                 typesOfData={["text", "text", "text","text", "image"]}
                 addRow={(popUp) => { console.log(popUp); addPopUp(popUp) }}
-                editRow={(popUp) => { console.log(popUp); updatePopUp(popUp) }}
+                editRow={(popUp) => { console.log(popUp); }}
                 deleteRow={(popUpId) => { console.log(popUpId); deletePopUp(popUpId) }}
                 deleteFile={(popUpId) => { console.log(popUpId); deletePopUpFile(popUpId) }}
                 showColumnSelector={false}
