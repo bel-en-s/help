@@ -68,31 +68,45 @@ export function deletePopUpFile(popUpId) {
 }
 
 export function updatePopUp({ ID, title, description, footer, status, file, previewFile }) {
+    console.log(ID, title, description, footer, status, file, previewFile);
+    
     const popUpRef = ref(db, `projects/${getCookie("projectID")}/popUps/${ID}`);
+
+    const updatePopUpData = (downloadURL = null) => {
+        const data = {
+            Titulo: title,
+            Descripcion: description,
+            Footer: footer,
+            Status: status
+        };
+        if (downloadURL) {
+            data.Imagenes = downloadURL;
+        }
+        
+        set(popUpRef, data)
+            .then(() => {
+                toast.success('Pop-up actualizado correctamente');
+            })
+            .catch((error) => {
+                toast.error('Error al actualizar el pop-up');
+                console.error("Error updating pop-up: ", error);
+            });
+    };
+
     if (file) {
         const storageRef = sRef(storage, 'projects/' + getCookie("projectID") + '/popUps/' + ID + '/' + 'image.png');
         uploadBytes(storageRef, file)
             .then((snapshot) => {
-                getDownloadURL(snapshot.ref).then((downloadURL) => {
-                    set(popUpRef, {
-                        Titulo: title,
-                        Descripcion: description,
-                        Footer: footer,
-                        Imagenes: downloadURL,
-                        Status: status
-                    });
-                });
+                return getDownloadURL(snapshot.ref);
+            })
+            .then((downloadURL) => {
+                updatePopUpData(downloadURL);
+            })
+            .catch((error) => {
+                toast.error('Error al subir la imagen');
+                console.error("Error uploading image: ", error);
             });
     } else {
-        if (previewFile) {
-            set(popUpRef, {
-                Titulo: title,
-                Descripcion: description,
-                Footer: footer,
-                Status: status
-            });
-        } else {
-            set(popUpRef, {});
-        }
+        updatePopUpData();
     }
 }
